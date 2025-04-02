@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Pupils Path</title>
+    <link rel='icon' type='image/x-png' href='spikeball.png'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css" media="screen">
+        html, body { height:100%; background-color: #ffffff; }
+        body { margin:0; padding:0; overflow:hidden; display: flex; flex-direction: column; align-items: center; }
+        #flashContent {
+            width:935px;
+            height:680px;
+            border: 5px solid #000; /* Black border around the Flash game */
+        }
+        .button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+        }
+        #bugReport {
+            background-color: #f00;
+            margin-right: 10px;
+        }
+        #bugReport:hover {
+            background-color: #c00;
+        }
+        #sourceCode {
+            background-color: #6e5494; /* GitHub purple */
+        }
+        #sourceCode:hover {
+            background-color: #5b4578;
+        }
+    </style>
+</head>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script>
+window.RufflePlayer.config = {
+    autoplay: "on",
+    unmuteOverlay: "hidden",
+    contextMenu: "rightClickOnly",
+};
+</script>
+
+<body>
+    <div id="flashContent">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="935" height="680" id="Dodge Falling Objects" align="middle">
+            <param name="movie" value="https://kdudn.github.io/Pupils-Path/Platformer.swf" />
+            <param name="quality" value="low" />
+            <param name="bgcolor" value="#ffffff" />
+            <param name="play" value="true" />
+            <param name="loop" value="true" />
+            <param name="wmode" value="window" />
+            <param name="scale" value="showall" />
+            <param name="menu" value="true" />
+            <param name="devicefont" value="false" />
+            <param name="salign" value="" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="https://kdudn.github.io/Pupils-Path/Platformer.swf" width="935" height="680">
+                <param name="movie" value="https://kdudn.github.io/Pupils-Path/Platformer.swf" />
+                <param name="quality" value="low" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="play" value="true" />
+                <param name="loop" value="true" />
+                <param name="wmode" value="window" />
+                <param name="scale" value="showall" />
+                <param name="menu" value="true" />
+                <param name="devicefont" value="false" />
+                <param name="salign" value="" />
+                <param name="allowScriptAccess" value="sameDomain" />
+            <!--<![endif]-->
+                <a href="https://chromewebstore.google.com/detail/ruffle-flash-emulator/donbcfbmhbcapadipfkeojnmajbakjdc?pli=1">
+                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                </a>
+            <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
+    </div>
+    <div>
+        <a id="bugReport" class="button" href="https://github.com/Kdudn/Pupils-Path/issues/new" target="_blank">Bug Report</a>
+        <a id="sourceCode" class="button" href="https://github.com/Kdudn/Pupils-Path" target="_blank">Source Code</a>
+    </div>
+</body>
+</html>
